@@ -1,7 +1,7 @@
-<html>
+﻿<html>
 <head>
   <meta charset="UTF-8" />
-  <title>Discover Canada – Beginner-Friendly Study Index</title>
+  <title>Discover Canada - Journey Through Canadian Story</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     body {
@@ -9,108 +9,195 @@
       line-height: 1.6;
       margin: 0;
       padding: 0;
-      background: #f5f7fb;
+      background: linear-gradient(135deg, #f5f7fb 0%, #e8eef5 100%);
       color: #222;
     }
     header {
-      background: #0f3c7a;
+      background: linear-gradient(135deg, #0f3c7a 0%, #1a5fa0 100%);
       color: #fff;
-      padding: 1.5rem 2rem;
+      padding: 2rem 2rem;
+      text-align: center;
+      border-bottom: 3px solid #c8102e;
     }
     header h1 {
-      margin: 0 0 0.25rem 0;
-      font-size: 1.8rem;
+      margin: 0 0 0.5rem 0;
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
     }
     header p {
       margin: 0;
-      opacity: 0.9;
+      opacity: 0.95;
+      font-size: 1.05rem;
+      font-weight: 300;
     }
     main {
-      padding: 1.5rem 2rem 3rem;
-      max-width: 1000px;
+      padding: 2rem 2rem 3rem;
+      max-width: 1100px;
       margin: 0 auto;
       background: #fff;
     }
+    .intro-narrative {
+      background: linear-gradient(135deg, #f0f4ff 0%, #e8f0ff 100%);
+      border-left: 5px solid #c8102e;
+      padding: 1.5rem 1.25rem;
+      margin-bottom: 2rem;
+      border-radius: 4px;
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #1a3a52;
+    }
     h2 {
-      border-bottom: 2px solid #e2e6f0;
-      padding-bottom: 0.25rem;
-      margin-top: 2rem;
+      border-bottom: 3px solid #0f3c7a;
+      padding-bottom: 0.5rem;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      color: #0f3c7a;
+      font-size: 1.6rem;
+    }
+    h2::before {
+	  content: "";
+      margin-right: 0.5rem;
     }
     h3 {
       margin-top: 1.5rem;
+      color: #1a5fa0;
+      font-size: 1.15rem;
+    }
+    .section-intro {
+      background: #f9f9f9;
+      padding: 1rem;
+      margin-bottom: 1.2rem;
+      border-left: 4px solid #c8102e;
+      border-radius: 3px;
+      font-style: italic;
+      color: #444;
+      line-height: 1.6;
     }
     .toc {
-      background: #eef2ff;
+      background: linear-gradient(135deg, #eef2ff 0%, #e8ecff 100%);
       border-radius: 6px;
-      padding: 1rem 1.25rem;
+      padding: 1.25rem 1.5rem;
       margin-bottom: 2rem;
-      border: 1px solid #d4ddff;
+      border: 2px solid #d4ddff;
     }
     .toc h2 {
       border-bottom: none;
       margin-top: 0;
+      padding-bottom: 0;
+    }
+    .toc h2::before {
+	  content: "";
     }
     .toc ul {
-      margin: 0.5rem 0 0;
-      padding-left: 1.25rem;
+      margin: 0.75rem 0 0;
+      padding-left: 1.5rem;
+    }
+    .toc li {
+      margin-bottom: 0.5rem;
     }
     .toc a {
       text-decoration: none;
       color: #0f3c7a;
+      font-weight: 500;
     }
     .toc a:hover {
       text-decoration: underline;
+      color: #1a5fa0;
     }
     a {
       color: #0f3c7a;
+      transition: color 0.2s;
     }
     a:hover {
+      color: #c8102e;
       text-decoration: underline;
     }
     ul {
-      margin-top: 0.25rem;
+      margin-top: 0.5rem;
+    }
+    li {
+      margin-bottom: 0.4rem;
+      line-height: 1.5;
     }
     .section-meta {
-      font-size: 0.9rem;
-      color: #555;
-      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 1rem;
+      font-style: italic;
+      background: #f5f5f5;
+      padding: 0.75rem;
+      border-radius: 3px;
+      line-height: 1.5;
     }
     .resource-tag {
       display: inline-block;
-      font-size: 0.8rem;
-      background: #e8f3ff;
-      color: #0f3c7a;
-      padding: 0.15rem 0.5rem;
+      font-size: 0.75rem;
+      background: #c8102e;
+      color: #fff;
+      padding: 0.2rem 0.6rem;
       border-radius: 999px;
       margin-left: 0.5rem;
+      font-weight: 600;
     }
     .external-guide {
-      background: #f0f4ff;
-      border-left: 4px solid #0f3c7a;
-      padding: 0.75rem 1rem;
+      background: linear-gradient(135deg, #f0f4ff 0%, #e8f0ff 100%);
+      border-left: 5px solid #c8102e;
+      padding: 1.25rem 1.25rem;
       margin-bottom: 1.5rem;
       border-radius: 4px;
       font-size: 0.95rem;
     }
+    .external-guide strong {
+      color: #0f3c7a;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .memory-hint {
+      background: #fff8e1;
+      border-left: 4px solid #ffc107;
+      padding: 0.75rem 1rem;
+      margin: 1rem 0;
+      border-radius: 3px;
+      font-size: 0.95rem;
+      color: #805f00;
+    }
+    .memory-hint::before {
+	  content: "Memory Tip: ";
+      font-weight: 600;
+    }
+    .timeline-item {
+      background: #f5f5f5;
+      padding: 0.75rem 1rem;
+      margin: 0.5rem 0;
+      border-left: 3px solid #0f3c7a;
+      border-radius: 2px;
+    }
     .videos-list li {
-      margin-bottom: 0.35rem;
+      margin-bottom: 0.5rem;
     }
     footer {
       text-align: center;
       font-size: 0.85rem;
       color: #777;
-      padding: 1rem 0 2rem;
+      padding: 2rem 0 1rem;
+      border-top: 1px solid #e0e0e0;
     }
   </style>
 </head>
 
 <body>
   <header>
-    <h1>Discover Canada – Beginner-Friendly Study Index</h1>
-    <p>A logically ordered structure to master the guide and pass the Canadian Citizenship Test.</p>
+  <h1>Discover Canada: A Journey Through History & Citizenship</h1>
+    <p>Learn Canada's Story - From Indigenous Roots to Modern Nation</p>
   </header>
 
   <main>
+    <!-- Intro narrative -->
+    <section class="intro-narrative">
+      <strong>Welcome to Canada's Story!</strong><br><br>
+      Canada's journey is one of transformation, resilience, and coming together. Before you prepare for the citizenship test, take a moment to understand the remarkable story of this nation - from the Indigenous peoples who lived here for thousands of years, through European exploration, colonial growth, and finally to a modern, multicultural democracy. This guide walks you through Canada's narrative in a way that helps you understand <em>why</em> Canada is the way it is today, making it easier to learn and remember.
+    </section>
     <!-- Link to official guide -->
     <section class="external-guide">
       <strong>Official Guide:</strong>
@@ -118,6 +205,33 @@
          target="_blank" rel="noopener noreferrer">
         Discover Canada: The Rights and Responsibilities of Citizenship (Read Online)
       </a>
+    </section>
+
+    <!-- Direct chapter links -->
+    <section class="external-guide">
+      <strong>Direct Chapter Access:</strong>
+      <div style="font-size: 0.9rem; margin-top: 0.5rem;">
+        <a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/applying-citizenship.html" target="_blank" rel="noopener noreferrer">Applying for Citizenship</a> | 
+        <a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/oath-citizenship.html" target="_blank" rel="noopener noreferrer">Oath of Citizenship</a> | 
+        <a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/rights-resonsibilities-citizenship.html" target="_blank" rel="noopener noreferrer">Rights &amp; Responsibilities</a> | 
+        <a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html" target="_blank" rel="noopener noreferrer">Who We Are</a>
+      </div>
+      <div style="font-size: 0.9rem; margin-top: 0.5rem;">
+        <a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">Canada's History</a> | 
+        <a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/modern-canada.html" target="_blank" rel="noopener noreferrer">Modern Canada</a> | 
+        <a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/how-canadians-govern-themselves.html" target="_blank" rel="noopener noreferrer">How Canadians Govern Themselves</a> | 
+        <a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/federal-elections.html" target="_blank" rel="noopener noreferrer">Federal Elections</a>
+      </div>
+      <div style="font-size: 0.9rem; margin-top: 0.5rem;">
+        <a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/justice-system.html" target="_blank" rel="noopener noreferrer">Justice System</a> | 
+        <a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadian-symbols.html" target="_blank" rel="noopener noreferrer">Canadian Symbols</a> | 
+        <a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-economy.html" target="_blank" rel="noopener noreferrer">Canada's Economy</a> | 
+        <a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-regions.html" target="_blank" rel="noopener noreferrer">Canada's Regions</a>
+      </div>
+      <div style="font-size: 0.9rem; margin-top: 0.5rem;">
+        <a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/study-questions.html" target="_blank" rel="noopener noreferrer">Study Questions</a> | 
+        <a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/more-information.html" target="_blank" rel="noopener noreferrer">For More Information</a>
+      </div>
     </section>
 
     <!-- Table of contents (internal navigation) -->
@@ -144,275 +258,337 @@
 	    <!-- 1. Introduction to Canada -->
     <section id="sec1">
       <h2>1. Introduction to Canada</h2>
-      <p class="section-meta">Big picture: geography, identity, symbols – to give context before going into history.</p>
+      <div class="section-intro">
+        <strong>Setting the Stage:</strong> Before we dive into Canada's past, let's get to know the land itself. Picture a vast country spanning six time zones, with the maple leaf as its symbol and two official languages: English and French. From the Atlantic shores to the Pacific mountains, from the Arctic north to the Great Lakes, Canada's geography shapes its identity and history.
+      </div>
+      <p class="section-meta">Big picture: geography, identity, symbols - the foundation of Canadian identity</p>
 
-      <h3>1.1 Canada at a Glance</h3>
+	  <h3>1.1 Canada at a Glance</h3>
       <ul>
-        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-regions.html" target="_blank" rel="noopener noreferrer">Geography &amp; Regions</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-regions.html" target="_blank" rel="noopener noreferrer">Geography &amp; Regions</a> - 10 provinces and 3 territories across North America</li>
 
-        <li><a href="https://www.canada.ca/en/intergovernmental-affairs/services/provincial-territorial-capitals.html" target="_blank" rel="noopener noreferrer">Provinces &amp; Territories</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-regions.html" target="_blank" rel="noopener noreferrer">Provinces &amp; Territories</a> - From BC to Newfoundland, each with unique character</li>
 
-        <li><a href="https://www.canada.ca/en/intergovernmental-affairs/services/provincial-territorial-capitals.html" target="_blank" rel="noopener noreferrer">Major Cities</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-regions.html" target="_blank" rel="noopener noreferrer">Major Cities</a> - Toronto, Vancouver, Montreal, Calgary, and Ottawa (the capital)</li>
 
-        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/symbols.html" target="_blank" rel="noopener noreferrer">National Symbols</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadian-symbols.html" target="_blank" rel="noopener noreferrer">National Symbols</a> - The maple leaf, the flag, Parliament, and the beaver</li>
       </ul>
+      <div class="memory-hint">The maple leaf has been Canada's symbol since the 1700s. Remember: Red-White-Red = Canadian flag (adopted 1965).</div>
 
-      <h3>1.2 Canadian Identity</h3>
+    <h3>1.2 Canadian Identity</h3>
       <ul>
-        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-we-are.html" target="_blank" rel="noopener noreferrer">What Makes Canada Unique</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html" target="_blank" rel="noopener noreferrer">What Makes Canada Unique</a> - A nation built on multiculturalism and respect</li>
 
-        <li><a href="https://www.canada.ca/en/canadian-heritage/services/multiculturalism.html" target="_blank" rel="noopener noreferrer">Diversity &amp; Multiculturalism</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html" target="_blank" rel="noopener noreferrer">Diversity &amp; Multiculturalism</a> - Canada welcomes people from all backgrounds</li>
 
-        <li><a href="https://www.rcaanc-cirnac.gc.ca/eng/1100100013785/1529102490303" target="_blank" rel="noopener noreferrer">Indigenous Peoples (First Nations, Inuit, Métis)</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html" target="_blank" rel="noopener noreferrer">Indigenous Peoples (First Nations, Inuit, Métis)</a> - The original inhabitants, whose contributions are foundational</li>
       </ul>
     </section>
 
     <!-- 2. Indigenous Foundations -->
     <section id="sec2">
       <h2>2. Indigenous Foundations</h2>
-      <p class="section-meta">Understanding the original peoples of this land before European contact.</p>
+      <div class="section-intro">
+        <strong>The Beginning:</strong> Long before Europeans arrived, Indigenous peoples thrived across this land for over 15,000 years. They developed rich cultures, trade networks, and deep knowledge of the environment. Understanding their story is essential to understanding Canada.
+      </div>
+      <p class="section-meta">The first chapter: Indigenous peoples and their connection to the land</p>
 
-      <h3>2.1 Early Societies</h3>
+    <h3>2.1 Early Societies</h3>
       <ul>
-        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">Lifestyles &amp; Regions</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html" target="_blank" rel="noopener noreferrer">Lifestyles &amp; Regions</a> - Different groups adapted to different environments (forests, plains, coasts)</li>
 
-        <li><a href="https://www.canada.ca/en/indigenous-services-canada.html" target="_blank" rel="noopener noreferrer">Cultural Contributions</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html" target="_blank" rel="noopener noreferrer">Cultural Contributions</a> - Art, governance systems, and environmental knowledge</li>
       </ul>
+      <div class="memory-hint">Three main Indigenous groups: <strong>First Nations</strong> (diverse tribes across Canada), <strong>Inuit</strong> (Arctic regions), and <strong>Métis</strong> (mixed French-Indigenous heritage).</div>
 
-      <h3>2.2 Indigenous–European Contact</h3>
+    <h3>2.2 Indigenous-European Contact</h3>
       <ul>
-        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">Early Trade</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">Early Trade</a> - Fur trade partnerships that changed both societies</li>
 
-        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">Alliances &amp; Conflicts</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">Alliances &amp; Conflicts</a> - Cooperation, treaties, and displacement</li>
       </ul>
     </section>
 
     <!-- 3. European Exploration & Settlement -->
     <section id="sec3">
       <h2>3. European Exploration &amp; Settlement</h2>
-      <p class="section-meta">First European explorers and the beginnings of permanent settlements.</p>
+      <div class="section-intro">
+        <strong>New Explorers Arrive:</strong> Starting in the late 1400s, European explorers seeking new trade routes arrived on Canadian shores. This marked the beginning of a new chapter - one of exploration, colonization, and cultural collision that would reshape the continent.
+      </div>
+      <p class="section-meta">When Europe discovers the "New World"</p>
 
-      <h3>3.1 Early Explorers</h3>
+    <h3>3.1 Early Explorers</h3>
       <ul>
-        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">Vikings</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">Vikings</a> - The Norse may have reached North America around 1000 AD (Vinland)</li>
 
-        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">John Cabot</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">John Cabot</a> - Italian explorer (1497) who claimed land for England on behalf of the Crown</li>
 
-        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">Jacques Cartier</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">Jacques Cartier</a> - French explorer (1534) who sailed the St. Lawrence River and named the land "Canada"</li>
       </ul>
+      <div class="memory-hint">Jacques Cartier = "Canada" name origin. Remember: French explorers came seeking furs and trade, not just conquest.</div>
 
-      <h3>3.2 French &amp; British Colonies</h3>
+    <h3>3.2 French &amp; British Colonies</h3>
       <ul>
-        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">New France</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">New France</a> - French colonial settlements along the St. Lawrence River (Quebec City, Montreal)</li>
 
-        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">British Conquest</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">British Conquest</a> - Battle of the Plains of Abraham (1759) - French defeated, British took control</li>
 
-        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">Acadians &amp; Loyalists</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">Acadians &amp; Loyalists</a> - French Acadians displaced; American Loyalists fled to Canada after US Independence</li>
       </ul>
     </section>
 
     <!-- 4. The Road to Confederation -->
     <section id="sec4">
       <h2>4. The Road to Confederation</h2>
-      <p class="section-meta">From colonies to a united country called Canada.</p>
+      <div class="section-intro">
+        <strong>Birth of a Nation:</strong> By the mid-1800s, British colonies in North America wanted independence. In 1867, four colonies united to create the Dominion of Canada. This pivotal moment set Canada on the path to becoming a sovereign nation.
+      </div>
+      <p class="section-meta">The pivotal year 1867 and the events that led to it</p>
 
-      <h3>4.1 Key Events Leading to Confederation</h3>
+    <h3>4.1 Key Events Leading to Confederation</h3>
       <ul>
-        <li><a href="https://www.canada.ca/en/services/culture/history-heritage/war-1812.html" target="_blank" rel="noopener noreferrer">War of 1812</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">War of 1812</a> - Canadian militia defended against American invasion; boosted sense of identity</li>
 
-        <li><a href="https://www.bac-lac.gc.ca/eng/discover/politics-government/rebellions-1837-1838" target="_blank" rel="noopener noreferrer">Rebellions of 1837–38</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">Rebellions of 1837-38</a> - Uprisings in Upper and Lower Canada demanding democratic reforms</li>
 
-        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">Responsible Government</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">Responsible Government</a> - Colonists gained control of their own affairs (before full independence)</li>
       </ul>
+      <div class="memory-hint"><strong>Responsible Government</strong> = Colonists could make decisions about their own colonies, not just follow British orders blindly.</div>
 
-      <h3>4.2 Confederation (1867)</h3>
+    <h3>4.2 Confederation (1867)</h3>
       <ul>
-        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">Founding Provinces</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">Founding Provinces</a> - Ontario, Quebec, Nova Scotia, New Brunswick - the original four unite</li>
 
-        <li><a href="https://www.canada.ca/en/services/culture/history-heritage/fathers-confederation.html" target="_blank" rel="noopener noreferrer">Fathers of Confederation</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">Fathers of Confederation</a> - Sir John A. Macdonald and other leaders who negotiated Confederation</li>
 
-        <li><a href="https://www.canada.ca/en/services/culture/canadian-identity-society/creation-canada.html" target="_blank" rel="noopener noreferrer">Expansion of Canada (Joining Provinces)</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">Expansion of Canada (Joining Provinces)</a> - Over time, more provinces and territories joined (Manitoba, BC, Alberta, Saskatchewan, etc.)</li>
+      </ul>
       </ul>
     </section>
 	
 	    <!-- 5. Canada Grows as a Nation -->
     <section id="sec5">
       <h2>5. Canada Grows as a Nation</h2>
-      <p class="section-meta">Territorial growth, immigration, and social change.</p>
+      <div class="section-intro">
+        <strong>Building a New Country:</strong> After Confederation, Canada expanded westward. The Canadian Pacific Railway connected coast to coast. New immigrants arrived, cities grew, and Canada transformed from a colonial backwater into a modern nation.
+      </div>
+      <p class="section-meta">Territorial expansion, industrialization, and nation-building (1867-1920s)</p>
 
-      <h3>5.1 Building the Country</h3>
+    <h3>5.1 Building the Country</h3>
       <ul>
-        <li><a href="https://www.canada.ca/en/services/culture/history-heritage/canadian-pacific-railway.html" target="_blank" rel="noopener noreferrer">Canadian Pacific Railway</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">Canadian Pacific Railway</a> - Completed 1885 - Connected Atlantic to Pacific, unified the nation</li>
 
-        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/canada-immigration-history.html" target="_blank" rel="noopener noreferrer">Immigration Waves</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">Immigration Waves</a> - Europeans, especially from Eastern Europe, came seeking land and opportunity</li>
 
-        <li><a href="https://www.canada.ca/en/services/culture/history-heritage/settlement-western-canada.html" target="_blank" rel="noopener noreferrer">Prairie Settlement</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">Prairie Settlement</a> - Homesteading in the West; the "Last Best West" attracted settlers</li>
       </ul>
+      <div class="memory-hint">The CPR was essential - without it, Canada might have fractured or been absorbed into the USA.</div>
 
-      <h3>5.2 Social &amp; Economic Development</h3>
+    <h3>5.2 Social &amp; Economic Development</h3>
       <ul>
-        <li><a href="https://www.canada.ca/en/services/culture/history-heritage/industrialization.html" target="_blank" rel="noopener noreferrer">Industrialization</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">Industrialization</a> - Factories, steel mills, and manufacturing transform society</li>
 
-        <li><a href="https://women-gender-equality.canada.ca/en/gender-based-violence-knowledge-centre/womens-history.html" target="_blank" rel="noopener noreferrer">Women’s Rights Movement</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">Women's Rights Movement</a> - Emily Stowe, Agnes Macphail fought for voting rights and equality</li>
 
-        <li><a href="https://www.canada.ca/en/services/culture/canadian-identity-society.html" target="_blank" rel="noopener noreferrer">Cultural Evolution</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/modern-canada.html" target="_blank" rel="noopener noreferrer">Cultural Evolution</a> - New Canadian identity forms, distinct from Britain</li>
       </ul>
     </section>
 
     <!-- 6. Canada in the World -->
     <section id="sec6">
       <h2>6. Canada in the World</h2>
-      <p class="section-meta">How Canada acted in major wars and in international organizations.</p>
+      <div class="section-intro">
+        <strong>Canada's Coming of Age:</strong> When Britain entered World War I, Canada followed - but as a nation, not as a colony. Canadian soldiers at Vimy Ridge showed the world Canada's strength. World War II cemented Canada's role as a world power. Today, Canada is known for peacekeeping and humanitarian work.
+      </div>
+      <p class="section-meta">From WWI to modern international role</p>
 
-      <h3>6.1 World Wars</h3>
+    <h3>6.1 World Wars</h3>
       <ul>
-        <li><a href="https://veterans.gc.ca/en/remembrance/military-history/first-world-war" target="_blank" rel="noopener noreferrer">WWI Contributions</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">WWI Contributions</a> - Over 600,000 Canadians served; 60,000 died</li>
 
-        <li><a href="https://veterans.gc.ca/en/remembrance/military-history/second-world-war" target="_blank" rel="noopener noreferrer">WWII Contributions</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">WWII Contributions</a> - Over 1 million served; crucial role in defeating Nazi Germany</li>
 
-        <li><a href="https://veterans.gc.ca/en/remembrance/memorials/canadian-virtual-war-memorial/vimy-ridge" target="_blank" rel="noopener noreferrer">Vimy Ridge &amp; National Identity</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">Vimy Ridge &amp; National Identity</a> - April 1917: Canadian Corps captured Vimy Ridge - a proud moment for Canadian unity</li>
       </ul>
+      <div class="memory-hint"><strong>Vimy Ridge</strong> = Canada's first major victory. The poem "In Flanders Fields" by John McCrae captures the sacrifice. Poppies = remembrance of fallen soldiers.</div>
 
-      <h3>6.2 Peacekeeping &amp; Global Role</h3>
+    <h3>6.2 Peacekeeping &amp; Global Role</h3>
       <ul>
-        <li><a href="https://www.international.gc.ca/world-monde/international_relations-relations_internationales/un-onu/index.aspx" target="_blank" rel="noopener noreferrer">United Nations</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/modern-canada.html" target="_blank" rel="noopener noreferrer">United Nations</a> - Canada founded UN in 1945 and participates actively</li>
 
-        <li><a href="https://www.international.gc.ca/world-monde/international_relations-relations_internationales/nato-otan/index.aspx" target="_blank" rel="noopener noreferrer">NATO</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/modern-canada.html" target="_blank" rel="noopener noreferrer">NATO</a> - Canada is a founding member (1949) of the defense alliance</li>
 
-        <li><a href="https://www.international.gc.ca/world-monde/issues_development-enjeux_developpement/assistance_international.aspx" target="_blank" rel="noopener noreferrer">Humanitarian Efforts</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/modern-canada.html" target="_blank" rel="noopener noreferrer">Humanitarian Efforts</a> - Canada accepts refugees, provides foreign aid, and promotes human rights</li>
       </ul>
     </section>
 
     <!-- 7. Modern Canada -->
     <section id="sec7">
       <h2>7. Modern Canada</h2>
-      <p class="section-meta">Post-war transformation, social programs, and the modern Constitution.</p>
+      <div class="section-intro">
+        <strong>A Nation Transformed:</strong> After WWII, Canada prospered. Social programs like healthcare and pensions were created. In 1982, Canada fully patriated its Constitution and adopted the Charter of Rights and Freedoms - a defining moment. Quebec's Quiet Revolution brought social change. Canada became officially multicultural.
+      </div>
+      <p class="section-meta">Post-war prosperity, constitutional changes, and social progress</p>
 
-      <h3>7.1 Post‑War Growth</h3>
+    <h3>7.1 Post-War Growth</h3>
       <ul>
-        <li><a href="https://www.canada.ca/en/services/culture/history-heritage/post-war-growth.html" target="_blank" rel="noopener noreferrer">Economic Boom</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/modern-canada.html" target="_blank" rel="noopener noreferrer">Economic Boom</a> - 1950s-60s: Full employment, rising living standards, suburban expansion</li>
 
-        <li><a href="https://www.canada.ca/en/health-canada/services/health-care-system.html" target="_blank" rel="noopener noreferrer">Social Programs (Healthcare, Pensions)</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/modern-canada.html" target="_blank" rel="noopener noreferrer">Social Programs (Healthcare, Pensions)</a> - Canada built universal healthcare (Tommy Douglas model); Old Age Security created; Unemployment Insurance</li>
       </ul>
+      <div class="memory-hint"><strong>Tommy Douglas</strong> brought Saskatchewan's healthcare model to the whole nation. Canada's healthcare = public, universal system (unlike the USA).</div>
 
-      <h3>7.2 Constitutional Changes</h3>
+    <h3>7.2 Constitutional Changes</h3>
       <ul>
-        <li><a href="https://laws-lois.justice.gc.ca/eng/Const/index.html" target="_blank" rel="noopener noreferrer">Charter of Rights and Freedoms</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/rights-resonsibilities-citizenship.html" target="_blank" rel="noopener noreferrer">Charter of Rights and Freedoms</a> - 1982: Canada's Constitution guarantees fundamental rights and freedoms</li>
 
-        <li><a href="https://www.canada.ca/en/intergovernmental-affairs/services/federalism.html" target="_blank" rel="noopener noreferrer">Federal–Provincial Relations</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/how-canadians-govern-themselves.html" target="_blank" rel="noopener noreferrer">Federal-Provincial Relations</a> - Balancing power between the federal and provincial governments</li>
       </ul>
     </section>
 
     <!-- 8. How Canada Is Governed -->
     <section id="sec8">
       <h2>8. How Canada Is Governed</h2>
+      <div class="section-intro">
+        <strong>The System:</strong> Canada is a constitutional monarchy, a parliamentary democracy, and a federal state. The Queen is head of state, but power rests with elected representatives. Laws are made through a democratic process involving three branches: executive, legislative, and judicial.
+      </div>
       <p class="section-meta">
         Core exam content: political system, levels of government, and how laws are made
         <span class="resource-tag">High-yield for test</span>
       </p>
 
-      <h3>8.1 Political System</h3>
+	  <h3>8.1 Political System</h3>
       <ul>
-        <li><a href="https://www.canada.ca/en/canadian-heritage/services/crown-canada.html" target="_blank" rel="noopener noreferrer">Constitutional Monarchy</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/how-canadians-govern-themselves.html" target="_blank" rel="noopener noreferrer">Constitutional Monarchy</a> - The Crown (represented by the Governor General) is head of state; Prime Minister is head of government</li>
 
-        <li><a href="https://www.parl.ca/legisinfo/en/how-parliament-works" target="_blank" rel="noopener noreferrer">Parliamentary Democracy</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/how-canadians-govern-themselves.html" target="_blank" rel="noopener noreferrer">Parliamentary Democracy</a> - Power held by Parliament (House of Commons + Senate); laws made democratically</li>
 
-        <li><a href="https://www.gg.ca/en" target="_blank" rel="noopener noreferrer">Governor General &amp; Monarch</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/how-canadians-govern-themselves.html" target="_blank" rel="noopener noreferrer">Governor General &amp; Monarch</a> - The Queen/King and Governor General perform ceremonial duties</li>
       </ul>
+      <div class="memory-hint"><strong>Key Point:</strong> Canada keeps the monarchy for historical reasons and constitutional tradition, but real power is with elected officials (Prime Minister and Parliament).</div>
 
-      <h3>8.2 Levels of Government</h3>
+    <h3>8.2 Levels of Government</h3>
       <ul>
-        <li><a href="https://www.canada.ca/en/government/system.html" target="_blank" rel="noopener noreferrer">Federal Government</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/how-canadians-govern-themselves.html" target="_blank" rel="noopener noreferrer">Federal Government</a> - Handles national issues (defense, trade, criminal law, immigration)</li>
 
-        <li><a href="https://www.canada.ca/en/intergovernmental-affairs/services/provincial-territorial-governments.html" target="_blank" rel="noopener noreferrer">Provincial/Territorial Government</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/how-canadians-govern-themselves.html" target="_blank" rel="noopener noreferrer">Provincial/Territorial Government</a> - Handles education, healthcare, local roads</li>
 
-        <li><a href="https://www.canada.ca/en/intergovernmental-affairs/services/municipalities.html" target="_blank" rel="noopener noreferrer">Municipal Government</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/federal-elections.html" target="_blank" rel="noopener noreferrer">Municipal Government</a> - Cities and towns handle local services (police, libraries, parks)</li>
       </ul>
+      <div class="memory-hint">Three levels = <strong>Federal</strong> (national), <strong>Provincial/Territorial</strong>, <strong>Municipal</strong> (local). Each has its own taxes and responsibilities.</div>
 
-      <h3>8.3 How Laws Are Made</h3>
+    <h3>8.3 How Laws Are Made</h3>
       <ul>
-        <li><a href="https://www.ourcommons.ca/en" target="_blank" rel="noopener noreferrer">House of Commons</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/how-canadians-govern-themselves.html" target="_blank" rel="noopener noreferrer">House of Commons</a> - Elected representatives (MPs) from all regions debate and vote on bills</li>
 
-        <li><a href="https://sencanada.ca/en/about/" target="_blank" rel="noopener noreferrer">Senate</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/how-canadians-govern-themselves.html" target="_blank" rel="noopener noreferrer">Senate</a> - 105 appointed senators review legislation (upper chamber)</li>
 
-        <li><a href="https://www.parl.ca/legisinfo/en/royal-assent" target="_blank" rel="noopener noreferrer">Royal Assent</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/how-canadians-govern-themselves.html" target="_blank" rel="noopener noreferrer">Royal Assent</a> - The Governor General signs bills into law on behalf of the Crown</li>
       </ul>
+      <div class="memory-hint">Law-making process: Bill proposed Ã¢€ €™ House votes Ã¢€ €™ Senate reviews Ã¢€ €™ Governor General signs Ã¢€ €™ It becomes law. 7 steps total!</div>
     </section>
 
     <!-- 9. Justice System & Public Safety -->
     <section id="sec9">
       <h2>9. Justice System &amp; Public Safety</h2>
-      <p class="section-meta">Understanding the rule of law and how justice is administered in Canada.</p>
+      <div class="section-intro">
+        <strong>Justice for All:</strong> Canada's justice system is built on the principle of "rule of law" - everyone, including government officials, is subject to the law. Courts are independent, police are accountable, and everyone has the right to a fair trial. This foundation ensures justice and protects rights.
+      </div>
+      <p class="section-meta">Core exam content: Courts, police, rights of the accused</p>
 
       <ul>
-        <li><a href="https://www.justice.gc.ca/eng/csj-sjc/just/" target="_blank" rel="noopener noreferrer">Rule of Law</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/justice-system.html" target="_blank" rel="noopener noreferrer">Rule of Law</a> - Everyone is equal under law; no one is above the law</li>
 
-        <li><a href="https://www.rcmp-grc.gc.ca/en" target="_blank" rel="noopener noreferrer">Police Services</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/justice-system.html" target="_blank" rel="noopener noreferrer">Police Services</a> - RCMP (federal), provincial police, municipal police enforce laws and protect citizens</li>
 
-        <li><a href="https://www.justice.gc.ca/eng/csj-sjc/ccs-ajc/" target="_blank" rel="noopener noreferrer">Courts &amp; Judges</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/justice-system.html" target="_blank" rel="noopener noreferrer">Courts &amp; Judges</a> - Supreme Court of Canada (highest), Federal Court, provincial courts interpret and apply laws</li>
 
-        <li><a href="https://www.justice.gc.ca/eng/csj-sjc/rights-droits/" target="_blank" rel="noopener noreferrer">Rights of the Accused</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/justice-system.html" target="_blank" rel="noopener noreferrer">Rights of the Accused</a> - Presumption of innocence; right to a lawyer; fair trial; due process protected</li>
       </ul>
+      <div class="memory-hint"><strong>Presumption of Innocence:</strong> In Canada, you are considered innocent until proven guilty in court - this is a fundamental right.</div>
     </section>
 	
 	    <!-- 10. Economy & Society -->
     <section id="sec10">
       <h2>10. Economy &amp; Society</h2>
-      <p class="section-meta">Key economic sectors and cultural life in Canada.</p>
+      <div class="section-intro">
+        <strong>What Makes Canada Prosperous:</strong> Canada is a trading nation with world-class resources, innovative industries, and a rich cultural identity. From oil sands and forestry to cutting-edge technology and world-renowned sports, Canada's economy reflects both its natural wealth and its people's creativity and entrepreneurial spirit. Understanding what drives Canada's prosperity helps you see why the country attracts people from around the world.
+      </div>
 
-      <h3>10.1 Key Industries</h3>
+	  <h3>Key Industries &amp; Economic Drivers</h3>
       <ul>
-        <li><a href="https://www.statcan.gc.ca/en/start" target="_blank" rel="noopener noreferrer">Natural Resources</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-economy.html" target="_blank" rel="noopener noreferrer">Natural Resources</a> - Canada is blessed with abundant natural wealth: oil (Alberta), timber (British Columbia), minerals (iron, nickel, uranium), and hydroelectric power. These resources fuel both domestic prosperity and international trade. Canada is one of the world's largest exporters of oil, timber, and minerals.</li>
 
-        <li><a href="https://www.canada.ca/en/innovation-science-economic-development.html" target="_blank" rel="noopener noreferrer">Technology</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/modern-canada.html" target="_blank" rel="noopener noreferrer">Technology</a> - Canada's tech sector is booming, with world-leading companies in artificial intelligence, software development, clean technology, and telecommunications. Cities like Toronto, Vancouver, and Waterloo are becoming tech hubs attracting global investment and talent.</li>
 
-        <li><a href="https://www.statcan.gc.ca/en/start" target="_blank" rel="noopener noreferrer">Manufacturing</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-economy.html" target="_blank" rel="noopener noreferrer">Manufacturing</a> - Canadian factories produce automobiles, aerospace components, chemicals, and consumer goods. The automotive industry, centered in Ontario, is a cornerstone of Canadian manufacturing and employs hundreds of thousands.</li>
       </ul>
+    <div class="memory-hint">Canada's Top Trading Partners: USA (biggest trade partner by far), China, Mexico, Germany, and Japan. Canada exports natural resources, manufactured goods, and technology worth hundreds of billions annually.</div>
 
-      <h3>10.2 Canadian Culture</h3>
+    <h3>Canadian Culture &amp; National Identity</h3>
       <ul>
-        <li><a href="https://www.canada.ca/en/canadian-heritage.html" target="_blank" rel="noopener noreferrer">Arts &amp; Sports</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadian-symbols.html" target="_blank" rel="noopener noreferrer">Arts &amp; Sports</a> - Canadians are passionate about creativity and competition. The country has produced world-class musicians (Leonard Cohen, Drake, The Weeknd), filmmakers, and visual artists. In sports, ice hockey is the national passion - a sport invented in Canada in the 1870s. Figure skating, curling, and lacrosse are also distinctly Canadian.</li>
 
-        <li><a href="https://www.canada.ca/en/canadian-heritage.html" target="_blank" rel="noopener noreferrer">Media &amp; Heritage</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/modern-canada.html" target="_blank" rel="noopener noreferrer">Media &amp; Heritage</a> - Canadian broadcasting (CBC), film industry, and publishing reflect Canadian values of multiculturalism and innovation. The Canada Council for the Arts supports creative expression. Canadian literary classics include works by Margaret Atwood, Alice Munro (Nobel Prize winner, 2013), and Robertson Davies.</li>
       </ul>
+    <div class="memory-hint">National Sport Recognition: Ice hockey is Canada's official winter sport; lacrosse is the official summer sport. Hockey teams like the Toronto Maple Leafs and Montreal Canadiens have storied histories dating back over 100 years.</div>
     </section>
 
     <!-- 11. Citizenship Essentials -->
     <section id="sec11">
       <h2>11. Citizenship Essentials</h2>
+      <div class="section-intro">
+        <strong>Being Canadian Means:</strong> Canadian citizenship is more than a document - it's membership in a democratic society with deep constitutional protections and mutual responsibilities. As a Canadian, you gain fundamental freedoms and rights, but you also accept duties to your community and country. This balance between individual liberty and collective responsibility is at the heart of what it means to be Canadian.
+      </div>
       <p class="section-meta">
-        What it means to be a Canadian citizen – this is frequently tested
+        What it means to be a Canadian citizen - this is frequently tested
         <span class="resource-tag">Exam core</span>
       </p>
 
+	  <h3>Your Rights as a Canadian Citizen</h3>
       <ul>
-        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/rights-resonsibilities-citizenship.html" target="_blank" rel="noopener noreferrer">Rights of Citizens</a></li>
-
-        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/rights-resonsibilities-citizenship.html" target="_blank" rel="noopener noreferrer">Responsibilities of Citizens</a></li>
-
-        <li><a href="https://www.elections.ca" target="_blank" rel="noopener noreferrer">Voting &amp; Civic Participation</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/rights-resonsibilities-citizenship.html" target="_blank" rel="noopener noreferrer">Rights of Citizens</a> - The Canadian Charter of Rights and Freedoms (1982) guarantees fundamental freedoms: freedom of conscience and religion, freedom of thought, freedom of peaceful assembly, and freedom of expression. You also have mobility rights (right to move within Canada), democratic rights (right to vote), and equality rights (protection from discrimination based on race, gender, age, disability, etc.). These rights cannot be taken away arbitrarily - they're constitutionally protected.</li>
       </ul>
+    <div class="memory-hint">Fundamental Freedoms (Charter Section 2): (a) freedom of conscience and religion; (b) freedom of thought, belief and expression; (c) freedom of peaceful assembly; (d) freedom of association. These are absolute - Canada values individual liberty and diversity.</div>
+
+    <h3>Your Responsibilities as a Canadian Citizen</h3>
+      <ul>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/rights-resonsibilities-citizenship.html" target="_blank" rel="noopener noreferrer">Responsibilities of Citizens</a> - With rights come duties. You must obey the law and respect others' rights. You're expected to contribute to your community, respect Canada's democratic traditions, and care for Canada's environment. You should participate in the democratic process - voting is not just a right but a civic responsibility. You should also respect the rights of others, including minorities, and uphold the values of equality and inclusion.</li>
+      </ul>
+    <div class="memory-hint">Civic Responsibility Balance: Rights protect you; Responsibilities protect everyone else. By respecting others' rights and following the law, you help maintain the free and peaceful society that makes Canada attractive to people worldwide.</div>
+
+    <h3>Voting &amp; Democratic Participation</h3>
+      <ul>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/federal-elections.html" target="_blank" rel="noopener noreferrer">Voting &amp; Civic Participation</a> - Canadian citizens aged 18+ have the right and responsibility to vote in federal, provincial, and municipal elections (some provinces allow voting at 16 in provincial elections). Elections are held approximately every 4 years at the federal level. Voting is how you influence government, hold leaders accountable, and shape Canada's future. Beyond voting, you can volunteer with community organizations, run for office, contact your elected representatives, or participate in public consultations about policies that affect you.</li>
+      </ul>
+	  <div class="memory-hint">Voting Age &amp; Rights: Must be 18 (federal &amp; most provinces; some provinces allow 16 for provincial elections). Voting is secret and voluntary, but encouraged as your democratic power and responsibility as a citizen.</div>
     </section>
 
     <!-- 12. Preparing for the Citizenship Test -->
     <section id="sec12">
       <h2>12. Preparing for the Citizenship Test</h2>
-      <p class="section-meta">How to study, what to expect, and targeted practice.</p>
+      <div class="section-intro">
+        <strong>Your Path to Citizenship Success:</strong> The Canadian citizenship test evaluates your knowledge of Canadian history, government, rights, responsibilities, and symbols. It's designed to ensure you understand the values and systems that define Canada. With proper preparation, you can approach the test with confidence. Most test-takers who study systematically using the Discover Canada guide and practice questions pass successfully.
+      </div>
+      <p class="section-meta">How to study, what to expect, and targeted practice strategies for exam success.</p>
 
-      <h3>12.1 What to Expect</h3>
+    <h3>What to Expect: Test Format &amp; Requirements</h3>
       <ul>
-        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/test.html" target="_blank" rel="noopener noreferrer">Format, timing, and requirements</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/applying-citizenship.html" target="_blank" rel="noopener noreferrer">Format, timing, and requirements</a> - The citizenship test consists of 20 multiple-choice questions based on the Discover Canada guide. You have approximately 30 minutes to complete it. To pass, you need to score 75% or higher (15 out of 20 questions correct). The test covers history (dates, events, people), government (how Parliament works, voting), rights and responsibilities, symbols (flag, anthem, monarchy), and geography. There's no pass/fail pressure - you can retake the test if needed, and the government provides the official study materials free of charge.</li>
       </ul>
+    <div class="memory-hint">Quick Test Facts: 20 questions, 30 minutes, pass at 75% (15/20 correct). All questions come from the Discover Canada guide. You can bring an official dictionary if English isn't your first language. Test material available free in official study guide.</div>
 
-      <h3>12.2 Study Strategies</h3>
+    <h3>Smart Study Strategies for Exam Success</h3>
       <ul>
-        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/test.html" target="_blank" rel="noopener noreferrer">Official Study Guide &amp; Tips</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/applying-citizenship.html" target="_blank" rel="noopener noreferrer">Official Study Guide &amp; Tips</a> - Use the official Discover Canada study guide as your foundation - it contains exactly the material you'll be tested on. Read it actively: underline key dates, create flashcards for important names and events, and write summaries in your own words. Focus on dates (Confederation 1867, Charter 1982, etc.), key figures (Sir John A. Macdonald, Tommy Douglas, etc.), and government processes (how laws are made, voting procedures). Create a study schedule: if you have 4 weeks, dedicate 2 weeks to reading and understanding, 1 week to reviewing, and 1 week to intensive practice testing. Study with a partner or group - explaining concepts to others reinforces your own learning.</li>
       </ul>
+    <div class="memory-hint">Master Study Plan: Week 1-2 (Read &amp; Understand), Week 3 (Review &amp; Flashcards), Week 4 (Practice Tests). Focus on: Key dates, Key people, Government processes, Constitutional rights, Symbols &amp; anthem. The more you understand the "why" behind facts, the easier they stick in memory.</div>
 
-      <h3>12.3 Practice Question Categories</h3>
+    <h3>Practice Question Categories &amp; What to Focus On</h3>
       <ul>
-        <li><a href="https://ct-tc.apps.cic.gc.ca/?lang=en" target="_blank" rel="noopener noreferrer">Official Practice Test Portal</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/study-questions.html" target="_blank" rel="noopener noreferrer">Official Practice Test Portal</a> - Practice with the official sample questions provided by the government. These are the closest representations of actual test questions. Focus your practice on: History questions (dates of major events - Confederation, WWII service, Charter of Rights), Government questions (how bills become laws, roles of Parliament, provinces, municipalities), Citizenship questions (rights and responsibilities, voting procedures, symbols), and Geography questions (provinces, territories, borders, major rivers). Take full-length practice tests under timed conditions to build test-taking stamina. After each practice test, review incorrect answers carefully to identify gaps in understanding. Don't just memorize - understand the "why" of each answer.</li>
       </ul>
+	  <div class="memory-hint">Practice Test Strategy: Complete at least 3-5 full practice tests before exam day. For each wrong answer, review the relevant section in Discover Canada guide. Aim to understand concepts, not just memorize facts. Testing yourself repeatedly builds confidence and long-term memory.</div>
     </section>
 
     <!-- 13. Final Review Tools -->
@@ -422,40 +598,77 @@
 
       <h3>13.1 Quick Facts &amp; Dates</h3>
       <ul>
-        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada.html" target="_blank" rel="noopener noreferrer">Key Dates &amp; Timeline</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">Key Dates &amp; Timeline</a></li>
       </ul>
 
       <h3>13.2 Important People</h3>
       <ul>
-        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada.html" target="_blank" rel="noopener noreferrer">Historical Figures</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">Historical Figures</a></li>
       </ul>
 
       <h3>13.3 Key Events Timeline</h3>
       <ul>
-        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">Canada’s History Timeline</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">Canada's History Timeline</a></li>
       </ul>
 
       <h3>13.4 Mock Test Checklist</h3>
       <ul>
-        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/test/results.html" target="_blank" rel="noopener noreferrer">Test Results &amp; Next Steps</a></li>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/more-information.html" target="_blank" rel="noopener noreferrer">Test Results &amp; Next Steps</a></li>
       </ul>
     </section>
 
+        <!-- 13. Final Review Tools -->
+    <section id="sec13">
+      <h2>13. Final Review Tools</h2>
+      <div class="section-intro">
+        <strong>Final Sprint Before Test Day:</strong> You've studied the Discover Canada guide, learned about history and government, and practiced with sample questions. Now it's time to consolidate everything into a focused final review. This section gives you quick-reference tools, flashcard-friendly facts, and a last-minute checklist to ensure you walk into the exam room confident and prepared.
+      </div>
+      <p class="section-meta">Quick-reference facts, timelines, and final preparation checklist for test day success.</p>
+
+    <h3>Key Dates &amp; Timeline - Memorize These!</h3>
+      <ul>
+      <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">Key Dates &amp; Timeline</a> - <strong>1867:</strong> Confederation (dominion formed from Ontario, Quebec, Nova Scotia, New Brunswick). <strong>1885:</strong> Canadian Pacific Railway completed (unified the nation). <strong>1917:</strong> Vimy Ridge victory (Canada's first major military victory). <strong>1945:</strong> Canada founding member of United Nations. <strong>1949:</strong> Canada founding member of NATO. <strong>1965:</strong> Canadian flag adopted. <strong>1982:</strong> Constitution repatriated from Britain; Charter of Rights and Freedoms adopted. <strong>1999:</strong> Nunavut created as newest territory. These dates appear regularly on the test - know them cold.</li>
+      </ul>
+    <div class="memory-hint">Dates to Memorize: 1867 (Confederation), 1885 (CPR), 1917 (Vimy), 1945 (UN), 1949 (NATO), 1965 (Flag), 1982 (Charter). These core dates are heavily tested. Create a timeline visualization to cement them in memory.</div>
+
+    <h3>Important Historical Figures You Should Know</h3>
+      <ul>
+      <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">Historical Figures</a> - <strong>Sir John A. Macdonald:</strong> Canada's first Prime Minister, architect of Confederation (1867). <strong>Jacques Cartier:</strong> French explorer, credited with naming Canada, explored St. Lawrence River (1534). <strong>John McCrae:</strong> Soldier-poet, wrote "In Flanders Fields" (1915 WWI poem, symbol of remembrance). <strong>Tommy Douglas:</strong> Saskatchewan Premier who created Canada's first provincial healthcare system; model inspired national universal healthcare. <strong>Samuel de Champlain:</strong> Founded Quebec City (1608), explorer of New France. <strong>Wilfrid Laurier:</strong> Canada's first French-Canadian Prime Minister. <strong>Franklin D. Roosevelt:</strong> US President who met with Canadian PM at Quebec Conference (WWII planning). Learning the "why" each person matters helps you remember them.</li>
+      </ul>
+    <div class="memory-hint">Remember People by Impact: Macdonald = Nation Builder (Confederation). Cartier = Name Origin ("Canada"). McCrae = Remembrance Symbol (Poppies). Douglas = Healthcare Pioneer (Universal system). These figures appear in test questions - understand their contributions.</div>
+
+    <h3>Key Events Timeline - The Canada Story</h3>
+      <ul>
+      <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank" rel="noopener noreferrer">Canada's History Timeline</a> - <strong>15,000+ years ago:</strong> Indigenous peoples arrive and establish societies. <strong>1000 AD:</strong> Vikings reach Newfoundland (Vinland). <strong>1497:</strong> John Cabot sails for England, explores Atlantic Canada. <strong>1608:</strong> Samuel de Champlain founds Quebec City; beginning of New France. <strong>1763:</strong> Treaty of Paris - Britain takes control of former French territories (New France becomes British North America). <strong>1812-1814:</strong> War of 1812 between USA and Britain/Canada. <strong>1837-1838:</strong> Rebellions in Upper and Lower Canada for responsible government. <strong>1867:</strong> Confederation - four colonies unite (Ontario, Quebec, Nova Scotia, New Brunswick). <strong>1885:</strong> CPR completed; prairie settlement begins. <strong>1914-1918:</strong> WWI (600,000 Canadians serve). <strong>1939-1945:</strong> WWII (1 million Canadians serve). <strong>1982:</strong> Patriation of Constitution, adoption of Charter. Understanding this progression shows Canada's evolution from colonial state to independent nation.</li>
+      </ul>
+    <div class="memory-hint">Timeline Insight: Indigenous Era  Exploration/Settlement  Colonial Period  Confederation  Nation-Building  Modern Democracy. Each phase builds on the previous one. Understanding the progression helps every date and event make sense.</div>
+
+    <h3>Final Exam Readiness Checklist - 48 Hours Before Test</h3>
+      <ul>
+        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/more-information.html" target="_blank" rel="noopener noreferrer">Test Results &amp; Next Steps</a> - <strong>The Night Before:</strong> Don't cram - review flashcards casually, get good sleep. Eat well the morning of the test. <strong>2 Hours Before Test:</strong> (1) Verify you have your ID and documents (passport, PR card, or travel document required). (2) Know your test location and travel time - arrive 15 minutes early. (3) Bring pen, pencil, and eraser (pencil for the test itself). (4) If English isn't your first language, confirm you have permission to bring an official dictionary. (5) Mental prep: take 3 deep breaths, remind yourself you're prepared. (6) Review your top 5 weakest areas from practice tests. <strong>During Test:</strong> Read questions carefully, manage time (1.5 min per question). Flag difficult questions and come back to them. <strong>After Test:</strong> If you pass (75%+), celebrate - you're on the path to citizenship! If you need to retake, review the areas you missed and schedule a new test. The citizenship office will inform you of results within 6-8 weeks.</li>
+      </ul>
+      <div class="memory-hint">Test Day Success Formula: Preparation + Sleep + Documents + Calm Mind + Careful Reading = Confident Performance. You've got this!</div>
+    </section>
+
+
     <!-- Study resources & video tutorials -->
     <section id="resources">
-      <h2>Study resources &amp; video tutorials</h2>
-      <p class="section-meta">Beginner-friendly, aligned with the Discover Canada guide and exam topics.</p>
+	  <h2>Study Resources &amp; Video Tutorials</h2>
+      <div class="section-intro">
+        <strong>Learn in Multiple Ways:</strong> Everyone learns differently. Some prefer reading, others respond better to visual explanations and hearing expert voices. This collection includes full-guide walkthroughs, animated explanations of government systems, real success stories from test-takers, and practice question databases. Use these resources to complement your reading, clarify confusing concepts, and build confidence.
+      </div>
+      <p class="section-meta">Beginner-friendly, aligned with the Discover Canada guide and exam topics. Watch, listen, practice, and succeed.</p>
 
-      <h3>Full guide walkthroughs &amp; audiobooks</h3>
+	  <h3>Full guide walkthroughs &amp; audiobooks</h3>
       <ul class="videos-list">
         <li>
           <a href="https://www.youtube.com/watch?v=7bT4tvwIoPI" target="_blank" rel="noopener noreferrer">
-            Important Notes &amp; Audiobook – Discover Canada Study Guide (2025)
+	    Important Notes &amp; Audiobook - Discover Canada Study Guide (2025)
           </a>
         </li>
         <li>
           <a href="https://www.youtube.com/watch?v=wSSPVa5T3cI" target="_blank" rel="noopener noreferrer">
-            Canadian Citizenship Study Guide 2025 – Discover Canada
+	    Canadian Citizenship Study Guide 2025 - Discover Canada
           </a>
         </li>
       </ul>
@@ -464,7 +677,7 @@
       <ul class="videos-list">
         <li>
           <a href="https://www.youtube.com/watch?v=ymEFFbcom88" target="_blank" rel="noopener noreferrer">
-            How Canada’s Government Works (Beginner Lecture)
+	    How Canada's Government Works (Beginner Lecture)
           </a>
         </li>
       </ul>
@@ -487,7 +700,7 @@
       <ul class="videos-list">
         <li>
           <a href="https://www.youtube.com/watch?v=EhVO3kC56aY" target="_blank" rel="noopener noreferrer">
-            Canadian Citizenship Test – Key Years &amp; Events
+	    Canadian Citizenship Test - Key Years &amp; Events
           </a>
         </li>
         <li>
@@ -501,7 +714,14 @@
   </main>
 
   <footer>
-    Discover Canada – Study Index &amp; Resource Map. Edit, expand, and customize for your personal study workflow.
+    <div class="section-intro" style="text-align: center; margin-top: 2rem; padding: 2rem; border-top: 2px solid #c8102e;">
+	  <h3 style="color: #0f3c7a; margin-bottom: 1rem;">Your Canadian Citizenship Journey Continues</h3>
+      <p style="font-size: 1rem; line-height: 1.6; color: #333;">
+        You now have all the knowledge, study strategies, and resources needed to succeed on your citizenship test. Remember: this isn't just about passing an exam€”it's about becoming part of a diverse, democratic nation built on freedom, equality, and respect. <br><br>
+	    <strong>Final Words:</strong> Study thoughtfully. Test confidently. Succeed proudly. Welcome to Canada!<br><br>
+        <em>Discover Canada €“ Complete Study Index & Resource Map. Created to help you understand and remember Canada's story.</em>
+      </p>
+    </div>
   </footer>
 </body>
 </html>
