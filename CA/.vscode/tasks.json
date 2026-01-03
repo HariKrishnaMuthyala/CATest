@@ -1,0 +1,11 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Add comprehensive questions to all quiz sections",
+			"type": "shell",
+			"command": "python add_questions.py",
+			"group": "build"
+		}
+	]
+}
